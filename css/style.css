@@ -1,0 +1,2045 @@
+@media screen and (max-resolution: 441dpi) {
+    /* Empty. Add your own CSS if you like */
+
+.bar-header {
+  border-bottom: 0;
+}
+
+/* css for global setting start */
+.action-sheet {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.action-sheet-group {
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar
+{
+    background-color: transparent;
+}
+
+/* css for global setting end */
+/* css for search page start */
+.searchtitle {
+   padding-top: 0.6667rem; 
+   font-family: SST Pro Heavy; 
+   font-size: 1.7333rem;
+   color: #000000;
+}
+.search_key {
+    border-width: 0.1333rem;
+    padding-left: 0.3333rem;
+}
+.search_key input{
+  color: #D0D2D3;
+  font-family: SST Pro Light;
+  font-size: 1.4rem;
+  padding-top: 0.333rem;
+}
+.search_key a{
+    padding-right: 0.0667rem;
+    color: #439EDF;
+    font-family: SST Pro Light;
+    font-size: 1.4rem;
+}
+.prompt{
+    color: #929497;
+    padding-top: 0.0667rem;
+}
+.prompt span{
+    font-family: SST Pro Light;
+    font-size: 1.1333rem;
+    color : #929497;
+    line-height: 0.9333rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.3333rem;
+}
+.p_one{
+    padding-top: 0.1333rem;
+}
+#tops {
+    margin-top: 11.25rem;
+    text-align: center;
+}
+/* css for search page end */
+h1.splash
+{
+  font-size: 6.25rem;
+  text-align: center;
+}
+a.splash
+{
+  font-size: 1.25rem;
+  text-decoration: none
+}
+div.splash
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92%
+}
+
+.login{
+    background: #439EDF;
+}
+
+div.login .content{
+  position: absolute;
+  top:3.75rem;
+  left:3.125rem;
+}
+
+div.login
+{
+  top:2.5rem;
+  position:absolute;
+  display: flex;
+  justify-content: left;
+  margin-left: 0.625rem;
+  align-items: center;
+  font-size: 2.5rem;
+  height: 40%
+}
+#hplus
+{
+    width: 8.125rem;
+    height: 1.25rem;
+    background: dodgerblue;
+    position: absolute;
+    margin-top: 3.4375rem;
+}
+#vplus
+{
+  width: 1.25rem;
+  height: 8.125rem;
+  background: dodgerblue;
+  position:absolute;
+  margin-left: 3.4375rem;
+}
+
+
+#hplus1
+{
+    top:3rem;
+    left:3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #fff;
+    position: absolute;
+
+}
+
+#hplus2
+{
+    top:3rem;
+    left:3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #fff;
+    position: absolute;
+    margin-left: 2rem;
+}
+
+#vplus1
+{
+  top:5rem;
+  left:3rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #fff;
+  position:absolute;
+}
+
+#vplus2
+{
+  top:5rem;
+  left:3rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #fff;
+  position:absolute;
+  margin-left: 2rem;
+}
+
+.login_content{
+    height:2.1333rem;
+    top:6.4rem;
+    left: 3.2rem;
+    width:9.25rem;
+    background: url('../svg/alpha.svg') no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+}
+.white_plus{
+    background: url('../svg/white_plus.svg') no-repeat;
+    background-size: 100% 100%;
+    width: 3.333rem;
+    height: 3.333rem;
+    margin-left: 3.2rem;
+    margin-top: 3.2rem;
+}
+.logincontent{
+    width:9.25rem;
+    height:4rem;
+    top:8.5rem;
+    position: absolute;
+    left:3rem;
+    background: url('../svg/alpha.svg') no-repeat;
+    background-size: 100% 100%;
+}
+
+.login .list{
+    display: flex;
+    height: 100%;
+    padding-top: 31%;
+    margin-left:0.625rem;
+    margin-right:0.625rem;
+    background: transparent;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.login .list .item.item-input{
+    border:0.1333rem solid #fff;
+    background: transparent;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.ng-valid.ng-dirty.ng-valid-parse.ng-touched{
+       background: transparent;
+}
+.login .list .item.item-input{
+   padding: 0;
+   font-size: 1.4rem;
+   font-family: SST Pro Light;
+   height:3.333rem;
+   padding-left: 0.3rem;
+   color: #000000;
+}
+.item.item-input .text{
+   padding-top:0.625rem;
+   background: transparent;
+   height:3.125rem;
+}
+
+
+/* css for detail page begin */
+.detailtitle {
+   padding-top: 0.6667rem;
+   font-family: SST Pro Heavy; 
+   color: #000000;
+}
+.bar-header {
+    background: none;
+}
+.button-bar .button_reject {
+  background-color: #2A3541;
+  color: #FFFFFF;
+  font-family: SST Pro Light;
+  padding-left: 0.5333rem;
+  padding-top: 0.35rem;
+  font-size: 1.3443rem;
+  padding-bottom: 0.35rem;	
+}
+.button-bar .button_approve {
+  background-color: #439EDF;
+  color: #FFFFFF;
+  font-family: SST Pro Light;
+  padding-right: 0.5333rem;
+  padding-top: 0.35rem;
+  font-size: 1.3443rem;
+  padding-bottom: 0.35rem;	
+}
+.button-bar .button {
+    border: 0.15rem solid white;
+
+}
+.button-bar .button:first-child {
+    text-align: left;
+    border-radius: 0rem;
+    margin-left: 0.4667rem;
+}
+
+.button-bar .button:last-child {
+    text-align: right;
+    border-radius: 0rem;
+    margin-right: 0.4667rem;
+}
+.content-detail {
+    padding-top: 0rem;
+    padding-right: 0rem;
+    margin: 0rem;
+}
+.content-detail p.main {
+    color:#000000;
+    font-family: 冬青黑w6;
+    font-size: 1rem;
+    padding-top:0.3962rem;
+}
+.content-detail p.submain {
+    color:#000000;
+    font-family: 冬青黑w3;
+    font-size: 1rem;
+}
+.content-detail p.details {
+    color:#929497;
+    font-family: 冬青黑w3;
+    font-size: 1rem;
+    margin-bottom: 0.5625rem;
+    line-height: 1.25rem;
+    white-space: pre-line;
+}
+.content-detail p span.right{
+    float:right;
+    color:#929497;
+    font-family: sst Pro Light;
+    font-size: 1rem;
+}
+.content-detail p {
+    margin-bottom: 0rem;
+}
+.content-detail hr{
+    margin-top: 0.6667rem;
+    margin-bottom: 0;
+}
+.h_info {
+    height: 1.1333rem;
+    font-family: SST Pro Bold;
+    color: #000000;
+    font-size: 1.1333rem;
+    margin-top: 0.5rem;
+}
+.i_info {
+    padding: 0rem;
+}
+.i_info p {
+    font-size: 0.9602rem;
+}
+.p_info {
+    margin-top: 0.125rem;
+    font-family: SST Pro Light;
+
+}
+/*.p_info i{
+    font-family: SST Pro Light;
+    font-size: 1rem;
+    color: #C4C4C6;
+}*/
+.f_name {
+    padding-left: 0.5rem;
+}
+.f_name span {
+    color: #439EDF;
+    font-family: SST Pro Light;
+    font-size: 1.1333rem;
+}
+.item-details .item {
+    border-style: none;
+    padding-top: 0.1333rem;
+    padding-bottom: 0.1333rem;
+}
+
+.item-details .item:last-child {
+    padding-bottom: 0.6667rem;
+}
+
+.item-attachments .item {
+    color: dodgerblue;
+    border-style: none;
+    background-color:#E5E6E7;
+    margin-top: 0.2667rem;
+    text-align: left;
+}
+
+.item-attachments .item p {
+    white-space:nowrap;
+    max-width:14.9333rem;
+    overflow:hidden;
+    display:inline-block;
+    text-overflow: ellipsis;
+}
+
+.item-attachments i.ion-document {
+    transform: rotateX(180deg);
+    display: inline-block;
+    position: absolute;
+    right: 0.6667rem;
+    font-size: 1.4rem;
+}
+
+.item-records .item {
+    border-style: none;
+    padding-top: 0.1333rem;
+    padding-bottom: 0.1333rem;
+}
+
+.commenttitle {
+   padding-top: 0.6667rem; 
+   font-family: SST Pro Heavy; 
+   font-size: 1.7333rem;
+   color: #000000;
+}
+.comment {
+    border-color: #439EDF;
+    border-width: 0.2667rem;
+    border-style: solid;
+    font-size: 1.4rem;
+    padding: 0.6667rem 0.2667rem;
+    margin-top: 1.0667rem;
+    margin-bottom: 1.0667rem;
+}
+
+.comment-normal {
+    color: #808184;
+    font-size: 1.4rem;
+    font-family: SST Pro Light;
+}
+
+.comment-required {
+    color: #EC1C24;
+    font-size: 1.4rem;
+    font-family: SST Pro Light;
+}
+
+.actionsheet-approvement .action-sheet-group {
+    display: flex;
+    flex-flow: row wrap;
+    height: 10.6667rem;
+}
+.actionsheet-approvement .action-sheet-group .button:after{
+    padding: 0;
+}
+.actionsheet-approvement .action-sheet-group .button:nth-child(2) {
+    width: 45%;
+    font-size: 1.4rem;
+    font-family: SST Pro Light;
+    padding-left: 0.5333rem;
+    position: absolute;
+    top:6.6rem;
+    left:0.9333rem;
+    bottom: 1.2rem;
+}
+
+.actionsheet-approvement .action-sheet-group .button:nth-child(3) {
+    width: 45%;
+    font-size: 1.4rem;
+    font-family: SST Pro Light;	
+    padding-right: 0.5333rem;
+
+    position: absolute;
+    top:6.6rem;
+    right:0.9333rem;
+}
+
+.actionsheet-approvement .action-sheet-title {
+    padding:0;
+    width: 100%;
+    text-align: left;
+    font-size: 1.1333rem;
+    color: #808184;
+    font-family: SST Pro Light;
+    position: absolute;
+    top:1.4667rem;
+    left:1.4667rem;
+    bottom: 3.2007rem;
+}
+
+.actionsheet-approvement .action-sheet-group .button:nth-child(2) {
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: left;
+}
+.actionsheet-approvement .action-sheet-group .button:nth-child(3) {
+    background-color: #439EDF;
+    color: #FFFFFF;
+    text-align: right;
+}
+
+.actionsheet-success .action-sheet-title {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    width: 100%;
+    height: 6.2667rem;
+    text-align: left;
+    font-size: 1.1333rem;
+    color: #808184;
+    font-family: SST Pro Light;
+}
+#comment-inform{
+    margin-top:0.6667rem;
+}
+#comment-inform .scroll {
+    height: 100%;
+}
+#comment-inform textarea {
+    width: 100%;
+    min-height: 10rem;
+    max-height: 10rem;
+    border: solid 0.2667rem #439EDF;
+    padding-top: 1rem;
+    padding-left: 0.6667rem;
+    color: #808184;
+    font-family: SST Pro Light;
+    font-size: 1.4rem;
+    line-height: 1.3rem;
+}
+#top {
+    margin-top: 14rem;
+    text-align: center;
+}
+
+  #gesturespinner {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    z-index: 999;
+  }
+
+/* css for detail page end*/
+
+/* css for fileviewer page start */
+
+.attachment-txt {
+    width: 100%;
+    height: 37.5rem;
+    white-space: pre;
+}
+
+.attachment-pdf-control-box {
+    display: flex;
+    align-items: center;
+}
+
+.attachment-pdf-control-box:nth-child(1) {
+    justify-content: flex-start;
+}
+
+.attachment-pdf-control-box:nth-child(2) {
+    justify-content: center;
+}
+
+.attachment-pdf-control-box:nth-child(3) {
+    justify-content: flex-end;
+}
+
+.attachment-pdf-control-box .button:first-child {
+    text-align: left;
+    padding-left: 0px;
+    color: black;
+}
+
+.attachment-pdf-control-box .button:last-child {
+    text-align: right;
+    padding-right: 0px;
+    color: black;
+}
+
+.attachment-pdf-control-subbox {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.attachment-pdf-control-item {
+    font-size: 0.9375rem;
+    font-family: SST Pro Light;
+}
+
+.attachment-pdf-control-item:nth-child(1) {
+    text-align: right;
+    font-size: 0.9375rem;
+    font-family: SST Pro Light;
+    width: 50%;
+}
+
+.attachment-pdf-control-item:nth-child(2) {
+    text-align: left;
+    width: 50%;
+}
+
+/*
+.attachment-pdf-controls {
+    width: 100%;
+    display: block;
+    background: #eee;
+    padding: 1em;
+}
+
+.attachment-pdf-fixed {
+    position: fixed;
+    top: 0;
+    left: calc(50% - 480px);
+    z-index: 100;
+    width: 100%;
+    padding: 1em;
+    background: rgba(238, 238, 238,.9);
+    width: 960px;
+}
+*/
+/* css for fileviewer page end */
+
+/* css for home page start*/
+#hometop {
+    margin-top: 11.25rem;
+    text-align: center;
+}
+.actionsheet-home .action-sheet-wrapper {
+    height: 100%;
+    background: #439EDF;
+    top:7.4rem;
+}
+
+.actionsheet-home .action-sheet-group {
+    padding: 0.75rem;
+    background: #439EDF;
+}
+
+.actionsheet-home .action-sheet .button{
+  min-height: 1.5625rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 0;
+  padding:0;
+  font-family: SST Pro Light;
+}
+
+.actionsheet-home .action-sheet .button span{
+  float:right;
+  color:#FDF003;
+  padding-right: 0.3841rem;
+}
+
+.content-home .des{
+  max-height: 3.75rem;
+  white-space: normal;
+  overflow: hidden;
+}
+
+.bar-subheader.myblue .title{
+  color: #fff;
+}
+
+.menucontent .close{
+  background: url('../img/close.jpg');
+  display: inline-block;
+  width:2.8125rem;
+  height:2.8125rem;
+  float:right;
+  margin-right: 1.5625rem;
+}
+
+
+/* css for home page end*/
+
+
+
+/* css for gesture page start*/
+
+.gesture{
+    margin-top:0;
+}
+.gesture-lock .gesture {
+  display: flex;
+  height: 100%;
+  padding-top: 1%;
+  flex-direction: column;
+  align-items: center;
+
+}
+.gesture-lock .hidden {
+  visibility: hidden;
+} 
+.gesture-lock .lookout {
+ visibility :visibility;
+}
+
+.actionsheet-gesture .action-sheet-title {
+    font-size: 1.2rem;
+    padding-bottom: 10rem !important;
+    width: 100%;
+    color:#8A8589;
+    text-align:left;
+}
+
+.gesture-lock{
+    background-color:#439EDF
+}
+ .gesture-lock .gestureinit {
+   margin-top:2.3rem;  
+ }
+ .gesture-lock .red{
+    margin-top:2.3rem;
+    text-align: center;
+    width:20rem;
+    font-family: SST Pro Light;
+    font-size: 1.1333rem;
+    color:#ED1C24;
+}
+.gesture-lock .write{
+    width:20rem;
+    margin-top:2.3rem;
+    text-align: center;
+    color:#FFFFFF;
+    font-family: SST Pro Light;
+    font-size: 1.1333rem;
+}
+.gesture-lock .bar-footer{
+    background: none;
+    color:#FAFAFA;
+
+}
+/* css for gesture page end*/
+/*-----------------------------------------------------------------*/
+
+
+.bar-header{
+  height:4.1333rem;
+  line-height:4.1333rem;
+  padding:0;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.platform-android .bar .title{
+    height:4.1333rem;
+    line-height: 4.1333rem;
+    display: block;
+}
+.bar .title{
+    font-size: 1.7333rem;
+    color: #000000;
+    position: relative;
+    bottom: 0;
+    line-height: 4.1333rem;
+    height:4.1333rem;
+    padding-left: 0.1333rem;
+}
+
+
+.bar .title .blue{
+    color:#439EDF;
+    padding-top: 2rem;
+}
+
+.bar .title .titleText{
+    height:4.1333rem;
+    line-height: 4.1333rem;
+}
+.bar .title .demo-icon{
+    color: #439edf;
+}
+
+.has-subheader {
+  top: 7rem;
+
+}
+
+.bar-subheader{
+    height:3.125rem;
+    top:3.875rem;
+     padding:0;
+  margin: 0;
+}
+
+.bar .subtitle{
+    bottom: 0;
+    margin-left:0.875rem;
+    margin-right:0.875rem;
+    background: #439EDF;
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+    min-width: 1.875rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color:#FFFFFF;
+    height:3.3333rem;
+    line-height: 3.3333rem;
+    font-family: SST Pro Light;
+}
+
+.bar .text{
+    padding-left: 0.5333rem;
+}
+
+.bar .subtext{
+    padding-left: 0.5333rem;
+    color:#fff;
+}
+
+.bar .subtitle .subheaderright{
+     color:#fff100;
+     display: inline-block;
+     padding-right: 0.5333rem;
+     padding-top:0.1875rem;
+     float:right;
+}
+
+/*-----------------------icon--------------------*/
+.ion-search{
+   width: 2rem;
+    height: 2rem;
+    margin-right: 0.75rem;
+    margin-top: 1rem;
+}
+.ion-android-close{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.75rem;
+    margin-top: 1rem;
+}
+/*-----------------------icon end--------------------*/
+
+.content-home ul{
+    margin-top:0.5rem;
+}
+
+.content-home li{
+    padding-top: 0.4667rem;
+    padding-left: 0.5rem;
+    margin-bottom: 0.4375rem;
+    border-top: 0.0667rem solid #929497;
+    
+}
+.content-home li p{
+    margin: 0;
+    padding: 0
+}
+
+.content-home li p.main{
+    color:#000000;
+    font-family: 冬青黑w6;
+    font-size: 1rem;
+
+}
+.content-home li p.submain{
+    color:#000000;
+    font-family: 冬青黑w3;
+    font-size: 1rem;
+}
+
+.content-home li p.details{
+    color:#929497;
+    font-family: 冬青黑w3;
+    font-size: 1rem;
+    margin-bottom:0.5625rem;
+    line-height:1.25rem;
+    white-space:pre-line;
+    max-height:2.5rem;
+    overflow:hidden;
+}
+.content-home li p span.right{
+    float:right;
+    color:#929497;
+    font-family: sst Pro Light;
+    font-size: 1rem;
+    padding-right: 0.5rem;
+}
+.content-home .item{
+    border-color: transition;
+    border-style: none;
+    border-width:0.0667rem;
+    padding: 0px;
+    margin: 0 0.8667rem;
+}
+
+  @media screen and (min-width: 72rem) {
+      
+        .content-home li{
+            border-bottom:0.1333rem solid #929497;
+        }
+  }
+
+   @media screen and (min-width: 48rem) {
+    .content-home li{
+            border-bottom:0.0667rem solid #929497;
+        }
+    
+  }
+  
+  /*************svg************************/
+ .plus {
+    background: url('../svg/plus.svg') no-repeat;
+    height:8rem;
+    width: 8rem;
+    background-size: 100% 100%;
+    text-align: left;
+ }
+ .alpha {
+    background: url('../svg/alpha.svg') no-repeat;
+    height:4rem;
+    background-size: 100% 100%;
+    width: 22.5rem;
+    margin-top: 7rem;
+    text-align: center;
+ }
+ .switchSystem {
+    background: url('../svg/switch_system.svg') no-repeat;
+    height:4rem;
+    background-size: 100% 100%;
+    width: 7rem;
+    text-align: left;
+    margin-left: 0.3333rem;
+    float: left;
+    margin-bottom: 0;
+ }
+ .totile {
+    float: left;
+    padding-left: 0.4667rem;
+    height: 4rem;
+    margin-bottom: 0;
+    font-size: 1.7333rem;	
+    color: #000000;
+    font-family: SST Pro Light;	
+ }
+ .icon_search {
+    background: url('../svg/search.svg') no-repeat;
+    background-size: 100% 100%;
+    width: 2.1333rem;
+    height: 2.1333rem;
+    margin-right: 0.5rem;
+    margin-top: 0.72rem;
+ }
+ .menu_userName {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    font-family: SST Pro Light;
+    font-size: 1.1333rem;
+    color: #000000;
+    margin-bottom: 0;
+ }
+ .menu_click {
+     padding-top: 0;
+     padding-bottom: 0;
+     padding-left: 1.2rem;
+     padding-right: 0.6rem;
+     height: 3rem;
+ }
+ .logout_menu {
+     width:100%; 
+     position:fixed; 
+     left:0; 
+     bottom:1.3333rem;
+ }
+ .menu_sony {
+    float: left; 
+    font-family: SST Pro Heavy;
+    font-size: 1.1333rem;
+    color: #000000;
+    padding-top: 1.1rem;
+ }
+ .menu_logout {
+    background: url('../svg/logout.svg') no-repeat;
+    background-size: 100% 100%;
+    width: 3rem;
+    height: 3rem;
+    float: right;
+ }
+.attach_file {
+    height: 1.6rem;
+    line-height: 1.6rem;
+    overflow: hidden;
+ }
+.attachment_icon_1 {
+    background: url('../svg/grey_file.svg') no-repeat;
+    background-size: 100% 100%;
+    width: 1.6rem;
+    height: 1.6rem;
+    float: right; 
+ }
+ .attachment_icon_2 {
+    background: url('../svg/file.svg') no-repeat;
+    background-size: 100% 100%;
+    width: 1.6rem;
+    height: 1.6rem;
+    float: right; 
+ }
+ .attach_name {
+    color:#808184;
+    font-family: SST Pro Light;
+    font-size: 1.1333rem;
+ }
+ .icon_close {
+    background: url('../svg/close.svg') no-repeat;
+    background-size: 100% 100%;
+    width: 2.1333rem;
+    height: 2.1333rem;
+    float: right; 
+    margin-top: 1.3333rem;
+    margin-right: 0.1333rem;
+ }
+ .span_menu {
+    background: url('../svg/switch_system.svg') no-repeat;
+    height:4rem;
+    background-size: 100% 100%;
+    width: 7rem;
+ }
+ .gesture_plus {
+    background: url('../svg/white_plus.svg') no-repeat;
+    background-size: 100% 100%;
+    width: 3.333rem;
+    height: 3.333rem;
+    margin-left: 3.2rem;
+    margin-top: 3.2rem;
+ }
+ .reset {
+    color:#FFFFFF;
+    font-family: SST Pro Light;
+    font-size: 1.0882rem;
+ }
+ .menu_toApprove {
+    color:#000000;
+    font-family: SST Pro Light;
+    font-size: 1.7333rem;
+    margin-left:0.3rem;
+ }
+ .gesture_title {
+     margin-top: 1.5rem;
+     padding-top: 5%;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+ }
+ .detailscrolls {
+     overflow: hidden;
+ }
+ .login_button_height {
+     min-height: 3.333rem;
+ }
+}
+
+
+@media screen and (min-resolution: 424dpi) {
+    /* Empty. Add your own CSS if you like */
+
+.bar-header {
+  border-bottom: 0;
+}
+
+/* css for global setting start */
+.action-sheet {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.action-sheet-group {
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar
+{
+    background-color: transparent;
+}
+
+/* css for global setting end */
+/* css for search page start */
+.searchtitle {
+   padding-top: 0.6667rem; 
+   font-family: SST Pro Heavy; 
+   font-size: 1.7333rem;
+   color: #000000;
+}
+.search_key {
+    border-width: 0.1333rem;
+    padding-left: 0.3333rem;
+}
+.search_key input{
+  color: #D0D2D3;
+  font-family: SST Pro Light;
+  font-size: 1.3443rem;
+  padding-top: 0.333rem;
+}
+.search_key a{
+    padding-right: 0.0667rem;
+    color: #439EDF;
+    font-family: SST Pro Light;
+    font-size: 1.3443rem;
+}
+.prompt{
+    color: #929497;
+    padding-top: 0.0667rem;
+}
+.prompt span{
+    font-family: SST Pro Light;
+    font-size: 1.0882rem;
+    color : #929497;
+    line-height: 0.9333rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.3333rem;
+}
+.p_one{
+    padding-top: 0.1333rem;
+}
+#tops {
+    margin-top: 11.25rem;
+    text-align: center;
+}
+/* css for search page end */
+h1.splash
+{
+  font-size: 6.25rem;
+  text-align: center;
+}
+a.splash
+{
+  font-size: 1.25rem;
+  text-decoration: none
+}
+div.splash
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92%
+}
+
+.login{
+    background: #439EDF;
+}
+
+div.login .content{
+  position: absolute;
+  top:3.75rem;
+  left:3.125rem;
+}
+
+div.login
+{
+  top:2.5rem;
+  position:absolute;
+  display: flex;
+  justify-content: left;
+  margin-left: 0.625rem;
+  align-items: center;
+  font-size: 2.5rem;
+  height: 40%
+}
+#hplus
+{
+    width: 8.125rem;
+    height: 1.25rem;
+    background: dodgerblue;
+    position: absolute;
+    margin-top: 3.4375rem;
+}
+#vplus
+{
+  width: 1.25rem;
+  height: 8.125rem;
+  background: dodgerblue;
+  position:absolute;
+  margin-left: 3.4375rem;
+}
+
+
+#hplus1
+{
+    top:3rem;
+    left:3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #fff;
+    position: absolute;
+
+}
+
+#hplus2
+{
+    top:3rem;
+    left:3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #fff;
+    position: absolute;
+    margin-left: 2rem;
+}
+
+#vplus1
+{
+  top:5rem;
+  left:3rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #fff;
+  position:absolute;
+}
+
+#vplus2
+{
+  top:5rem;
+  left:3rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #fff;
+  position:absolute;
+  margin-left: 2rem;
+}
+
+.login_content{
+    height:2.0484rem;
+    top:7rem;
+    left: 3.0726rem;
+    width:9.25rem;
+    background: url('../svg/alpha.svg') no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+}
+.white_plus{
+    background: url('../svg/white_plus.svg') no-repeat;
+    background-size: 100% 100%;
+    width: 3.5848rem;
+    height: 3.5848rem;
+    margin-left: 3.0726rem;
+    margin-top: 3.0726rem;
+}
+.logincontent{
+    width:9.25rem;
+    height:2.0484rem;
+    top:8.5rem;
+    position: absolute;
+    left:3rem;
+    background: url('../svg/alpha.svg') no-repeat;
+    background-size: 100% 100%;
+}
+
+.login .list{
+    display: flex;
+    height: 100%;
+    padding-top: 31%;
+    margin-left:0.625rem;
+    margin-right:0.625rem;
+    background: transparent;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.login .list .item.item-input{
+    border:0.1333rem solid #fff;
+    background: transparent;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.ng-valid.ng-dirty.ng-valid-parse.ng-touched{
+       background: transparent;
+}
+.login .list .item.item-input{
+   padding: 0;
+   font-size: 1.3443rem;
+   font-family: SST Pro Light;
+   height:3.2007rem;
+   padding-left: 0.3rem;
+   color: #000000;
+}
+.item.item-input .text{
+   padding-top:0.625rem;
+   background: transparent;
+   height:3.125rem;
+}
+
+
+/* css for detail page begin */
+.detailtitle {
+   padding-top: 0.6667rem;
+   font-family: SST Pro Heavy; 
+   color: #000000;
+}
+.bar-header {
+    background: none;
+}
+.button-bar .button_reject {
+  background-color: #2A3541;
+  color: #FFFFFF;
+  font-family: SST Pro Light;
+  padding-left: 0.5121rem;
+  padding-top: 0.35rem;
+  font-size: 1.3443rem;
+  padding-bottom: 0.35rem;
+}
+.button-bar .button_approve {
+  background-color: #439EDF;
+  color: #FFFFFF;
+  font-family: SST Pro Light;
+  padding-right: 0.5121rem;
+  padding-top: 0.35rem;
+  font-size: 1.3443rem;
+  padding-bottom: 0.35rem;
+}
+.button-bar .button {
+    border: 0.15rem solid white;
+}
+.button-bar .button:first-child {
+    text-align: left;
+    border-radius: 0rem;
+    margin-left: 0.5rem;
+}
+
+.button-bar .button:last-child {
+    text-align: right;
+    border-radius: 0rem;
+    margin-right: 0.5rem;
+}
+.content-detail {
+    padding-top: 0rem;
+    padding-right: 0rem;
+    margin: 0rem;
+}
+.content-detail p.main {
+    color:#000000;
+    font-family: 冬青黑w6;
+    font-size: 0.9602rem;
+    padding-top:0.3962rem;
+}
+.content-detail p.submain {
+    color:#000000;
+    font-family: 冬青黑w3;
+    font-size: 0.9602rem;
+}
+.content-detail p.details {
+    color:#929497;
+    font-family: 冬青黑w3;
+    font-size: 0.9602rem;
+    margin-bottom: 0.5625rem;
+    line-height: 1.25rem;
+    white-space: pre-line;
+}
+.content-detail p span.right{
+    float:right;
+    color:#929497;
+    font-family: sst Pro Light;
+    font-size: 0.9602rem;
+    padding-right: 0.5121rem;
+}
+.content-detail p {
+    margin-bottom: 0rem;
+}
+.content-detail hr{
+    margin-top: 0.6667rem;
+    margin-bottom: 0;
+}
+.h_info {
+    height: 1.1333rem;
+    font-family: SST Pro Bold;
+    color: #000000;
+    font-size: 1.0882rem;
+    margin-top: 0.5rem;
+}
+.i_info {
+    padding: 0rem;
+}
+.i_info p {
+    font-size: 0.9602rem;
+}
+.p_info {
+    margin-top: 0.125rem;
+    font-family: SST Pro Light;
+    
+}
+/*.p_info i{
+    font-family: SST Pro Light;
+    font-size: 1rem;
+    color: #C4C4C6;
+}*/
+.f_name {
+    padding-left: 0.5rem;
+}
+.f_name span {
+    color: #439EDF;
+    font-family: SST Pro Light;
+    font-size: 1.1333rem;
+}
+.item-details .item {
+    border-style: none;
+    padding-top: 0.1333rem;
+    padding-bottom: 0.1333rem;
+}
+
+.item-details .item:last-child {
+    padding-bottom: 0.6667rem;
+}
+
+.item-attachments .item {
+    color: dodgerblue;
+    border-style: none;
+    background-color:#E5E6E7;
+    margin-top: 0.2667rem;
+    text-align: left;
+}
+
+.item-attachments .item p {
+    white-space:nowrap;
+    max-width:14.9333rem;
+    overflow:hidden;
+    display:inline-block;
+    text-overflow: ellipsis;
+}
+
+.item-attachments i.ion-document {
+    transform: rotateX(180deg);
+    display: inline-block;
+    position: absolute;
+    right: 0.6667rem;
+    font-size: 1.4rem;
+}
+
+.item-records .item {
+    border-style: none;
+    padding-top: 0.1333rem;
+    padding-bottom: 0.1333rem;
+}
+
+.commenttitle {
+   padding-top: 0.6667rem; 
+   font-family: SST Pro Heavy; 
+   font-size: 1.7333rem;
+   color: #000000;
+}
+.comment {
+    border-color: #439EDF;
+    border-width: 0.2561rem;
+    border-style: solid;
+    font-size: 1.3443rem;
+    padding: 0.5121rem 0.5121rem;
+    margin-top: 1.0242rem;
+    margin-bottom: 1.0242rem;
+}
+
+.comment-normal {
+    color: #808184;
+    font-size: 1.3443rem;
+    font-family: SST Pro Light;
+}
+
+.comment-required {
+    color: #EC1C24;
+    font-size: 1.4rem;
+    font-family: SST Pro Light;
+}
+
+.actionsheet-approvement .action-sheet-group {
+    display: flex;
+    flex-flow: row wrap;
+    height: 10.2422rem;
+}
+.actionsheet-approvement .action-sheet-group .button:after{
+    padding: 0;
+}
+.actionsheet-approvement .action-sheet-group .button:nth-child(2) {
+    width: 45%;
+    font-size: 1.3443rem;
+    font-family: SST Pro Light;
+    padding-left: 0.4481rem;
+    position: absolute;
+    top:6.6rem;
+    left:0.9333rem;
+    bottom: 1.0242rem;
+}
+
+.actionsheet-approvement .action-sheet-group .button:nth-child(3) {
+    width: 45%;
+    font-size: 1.3443rem;
+    font-family: SST Pro Light;
+    padding-right: 0.4481rem;
+    position: absolute;
+    bottom: 1.0242rem;
+    top:6.6rem;
+    right:0.9333rem;
+}
+
+.actionsheet-approvement .action-sheet-title {
+    padding:0;
+    width: 100%;
+    text-align: left;
+    font-size: 1.0882rem;
+    color: #808184;
+    font-family: SST Pro Light;
+    position: absolute;
+    top:1.1522rem;
+    left:1.5363rem;
+    bottom: 3.2007rem;
+}
+
+.actionsheet-approvement .action-sheet-group .button:nth-child(2) {
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: left;
+}
+.actionsheet-approvement .action-sheet-group .button:nth-child(3) {
+    background-color: #439EDF;
+    color: #FFFFFF;
+    text-align: right;
+}
+
+.actionsheet-success .action-sheet-title {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    width: 100%;
+    height: 6.2667rem;
+    text-align: left;
+    font-size: 1.1333rem;
+    color: #808184;
+    font-family: SST Pro Light;
+}
+#comment-inform{
+    margin-top:0.6667rem;
+}
+#comment-inform .scroll {
+    height: 100%;
+}
+#comment-inform textarea {
+    width: 100%;
+    min-height: 10rem;
+    max-height: 10rem;
+    border: solid 0.2561rem #439EDF;
+    padding-top: 1rem;
+    padding-left: 0.6667rem;
+    color: #808184;
+    font-family: SST Pro Light;
+    font-size: 1.4rem;
+    line-height: 1.3rem;
+}
+#top {
+    margin-top: 14rem;
+    text-align: center;
+}
+
+  #gesturespinner {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    z-index: 999;
+  }
+
+/* css for detail page end*/
+
+/* css for fileviewer page start */
+
+.attachment-txt {
+    width: 100%;
+    height: 37.5rem;
+    white-space: pre;
+}
+
+.attachment-pdf-control-box {
+    display: flex;
+    align-items: center;
+}
+
+.attachment-pdf-control-box:nth-child(1) {
+    justify-content: flex-start;
+}
+
+.attachment-pdf-control-box:nth-child(2) {
+    justify-content: center;
+}
+
+.attachment-pdf-control-box:nth-child(3) {
+    justify-content: flex-end;
+}
+
+.attachment-pdf-control-box .button:first-child {
+    text-align: left;
+    padding-left: 0px;
+    color: black;
+}
+
+.attachment-pdf-control-box .button:last-child {
+    text-align: right;
+    padding-right: 0px;
+    color: black;
+}
+
+.attachment-pdf-control-subbox {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.attachment-pdf-control-item {
+    font-size: 0.9375rem;
+    font-family: SST Pro Light;
+}
+
+.attachment-pdf-control-item:nth-child(1) {
+    text-align: right;
+    font-size: 0.9375rem;
+    font-family: SST Pro Light;
+    width: 50%;
+}
+
+.attachment-pdf-control-item:nth-child(2) {
+    text-align: left;
+    width: 50%;
+}
+
+/*
+.attachment-pdf-controls {
+    width: 100%;
+    display: block;
+    background: #eee;
+    padding: 1em;
+}
+
+.attachment-pdf-fixed {
+    position: fixed;
+    top: 0;
+    left: calc(50% - 480px);
+    z-index: 100;
+    width: 100%;
+    padding: 1em;
+    background: rgba(238, 238, 238,.9);
+    width: 960px;
+}
+*/
+/* css for fileviewer page end */
+
+/* css for home page start*/
+#hometop {
+    margin-top: 11.25rem;
+    text-align: center;
+}
+.actionsheet-home .action-sheet-wrapper {
+    height: 100%;
+    background: #439EDF;
+    top:7.4rem;
+}
+
+.actionsheet-home .action-sheet-group {
+    padding: 0.75rem;
+    background: #439EDF;
+}
+
+.actionsheet-home .action-sheet .button{
+  min-height: 1.5625rem;
+  font-size: 1.3443rem;
+  font-weight: 400;
+  margin: 0;
+  padding:0;
+  font-family: SST Pro Light;
+}
+
+.actionsheet-home .action-sheet .button span{
+  float:right;
+  color:#FDF003;
+  padding-right: 0.3841rem;
+}
+
+.content-home .des{
+  max-height: 3.75rem;
+  white-space: normal;
+  overflow: hidden;
+}
+
+.bar-subheader.myblue .title{
+  color: #fff;
+}
+
+.menucontent .close{
+  background: url('../img/close.jpg');
+  display: inline-block;
+  width:2.8125rem;
+  height:2.8125rem;
+  float:right;
+  margin-right: 1.5625rem;
+}
+
+
+/* css for home page end*/
+
+
+
+/* css for gesture page start*/
+
+.gesture{
+    margin-top:0;
+}
+.gesture-lock .gesture {
+  display: flex;
+  height: 100%;
+  padding-top: 1%;
+  flex-direction: column;
+  align-items: center;
+
+}
+.gesture-lock .hidden {
+  visibility: hidden;
+} 
+.gesture-lock .lookout {
+ visibility :visibility;
+}
+
+.actionsheet-gesture .action-sheet-title {
+    font-size: 1.2rem;
+    padding-bottom: 10rem !important;
+    width: 100%;
+    color:#8A8589;
+    text-align:left;
+}
+
+.gesture-lock{
+    background-color:#439EDF
+}
+ .gesture-lock .gestureinit {
+   margin-top:2.3rem;  
+ }
+ .gesture-lock .red{
+    margin-top:2.3rem;
+    text-align: center;
+    width:20rem;
+    font-family: SST Pro Light;
+    font-size: 1.0882rem;
+    color:#ED1C24;
+}
+.gesture-lock .write{
+    width:20rem;
+    margin-top:2.3rem;
+    text-align: center;
+    color:#FFFFFF;
+    font-family: SST Pro Light;
+    font-size: 1.0882rem;
+}
+.gesture-lock .bar-footer{
+    background: none;
+    color:#FAFAFA;
+
+}
+/* css for gesture page end*/
+/*-----------------------------------------------------------------*/
+
+
+.bar-header{
+  height:3.9688rem;
+  line-height:4.1333rem;
+  padding:0;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.platform-android .bar .title{
+    height:4.1333rem;
+    line-height: 4.1333rem;
+    display: block;
+}
+.bar .title{
+    font-size: 1.6644rem;
+    color: #000000;
+    position: relative;
+    bottom: 0;
+    line-height: 4.1333rem;
+    height:4.1333rem;
+    padding-left: 0.1333rem;
+}
+
+.bar .title .blue{
+    color:#439EDF;
+    padding-top: 2rem;
+}
+
+.bar .title .titleText{
+    height:4.1333rem;
+    line-height: 4.1333rem;
+}
+.bar .title .demo-icon{
+    color: #439edf;
+}
+
+.has-subheader {
+  top: 7rem;
+
+}
+
+.bar-subheader{
+    height:3.125rem;
+    top:3.875rem;
+     padding:0;
+  margin: 0;
+}
+
+.bar .subtitle{
+    bottom: 0;
+    margin-left:0.875rem;
+    margin-right:0.875rem;
+    background: #439EDF;
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+    min-width: 1.875rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1.3443rem;
+    font-weight: 500;
+    color:#FFFFFF;
+    height:3.2007rem;
+    line-height: 3.2007rem;
+    font-family: SST Pro Light;
+}
+
+.bar .text{
+    padding-left: 0.5333rem;
+}
+
+.bar .subtext{
+    padding-left: 0.5333rem;
+    color:#fff;
+}
+
+.bar .subtitle .subheaderright{
+     color:#fff100;
+     display: inline-block;
+     padding-right: 0.5121rem;
+     padding-top:0.1875rem;
+     float:right;
+}
+
+/*-----------------------icon--------------------*/
+.ion-search{
+   width: 2rem;
+    height: 2rem;
+    margin-right: 0.75rem;
+    margin-top: 1rem;
+}
+.ion-android-close{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.75rem;
+    margin-top: 1rem;
+}
+/*-----------------------icon end--------------------*/
+
+.content-home ul{
+    margin-top:0.5121rem;
+}
+
+.content-home li{
+    padding-top: 0.5962rem;
+    padding-left: 0.5rem;
+    margin-bottom: 0.4375rem;
+    border-top: 0.0667rem solid #929497;
+    
+}
+.content-home li p{
+    margin: 0;
+    padding: 0
+}
+
+.content-home li p.main{
+    color:#000000;
+    font-family: 冬青黑w6;
+    font-size: 0.9602rem;
+
+}
+.content-home li p.submain{
+    color:#000000;
+    font-family: 冬青黑w3;
+    font-size: 0.9602rem;
+}
+
+.content-home li p.details{
+    color:#929497;
+    font-family: 冬青黑w3;
+    font-size: 0.9602rem;
+    margin-bottom:0.5962rem;
+    line-height:1.25rem;
+    white-space:pre-line;
+    max-height:2.5rem;
+    overflow:hidden;
+}
+.content-home li p span.right{
+    float:right;
+    color:#929497;
+    font-family: sst Pro Light;
+    font-size: 0.9602rem;
+    padding-right: 0.5121rem;
+}
+.content-home .item{
+    border-color: transition;
+    border-style: none;
+    border-width:0.0667rem;
+    padding: 0px;
+    margin: 0 0.8667rem;
+}
+
+  @media screen and (min-width: 72rem) {
+      
+        .content-home li{
+            border-bottom:0.1333rem solid #929497;
+        }
+  }
+
+   @media screen and (min-width: 48rem) {
+    .content-home li{
+            border-bottom:0.0667rem solid #929497;
+        }
+    
+  }
+  
+  /*************svg************************/
+ .plus {
+    background: url('../svg/plus.svg') no-repeat;
+    height:8rem;
+    width: 8rem;
+    background-size: 100% 100%;
+    text-align: left;
+ }
+ .alpha {
+    background: url('../svg/alpha.svg') no-repeat;
+    height:4rem;
+    background-size: 100% 100%;
+    width: 22.5rem;
+    margin-top: 7rem;
+    text-align: center;
+ }
+ .switchSystem {
+    background: url('../svg/switch_system.svg') no-repeat;
+    height:4rem;
+    background-size: 100% 100%;
+    width: 7rem;
+    text-align: left;
+    margin-left: 0.3333rem;
+    float: left;
+    margin-bottom: 0;
+ }
+ .totile {
+    float: left;
+    padding-left: 0.5121rem;
+    height: 4rem;
+    margin-bottom: 0;
+    font-size: 1.6644rem;
+    color: #000000;
+    font-family: SST Pro Light;
+ }
+ .icon_search {
+    background: url('../svg/search.svg') no-repeat;
+    background-size: 100% 100%;
+    width: 2.0484rem;
+    height: 2.0484rem;
+    margin-right: 0.5rem;
+    margin-top: 0.6401rem;
+ }
+ .menu_userName {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    font-family: SST Pro Light;
+    font-size: 1.0882rem;
+    color: #000000;
+    margin-bottom: 0;
+ }
+ .menu_click {
+     padding-top: 0;
+     padding-bottom: 0;
+     padding-left: 1.2rem;
+     padding-right: 0.562rem;
+     height: 3rem;
+ }
+.logout_menu {
+     width:100%; 
+     position:fixed; 
+     left:0; 
+     bottom:1.3316rem;
+}
+ .menu_sony {
+    float: left; 
+    font-family: SST Pro Heavy;
+    font-size: 1.0882rem;
+    color: #000000;
+    padding-top: 0.8rem;
+ }
+ .menu_logout {
+    background: url('../svg/logout.svg') no-repeat;
+    background-size: 100% 100%;
+    width: 3rem;
+    height: 3rem;
+    float: right;
+ }
+.attach_file {
+    height: 1.6rem;
+    line-height: 1.6rem;
+    overflow: hidden;
+ }
+.attachment_icon_1 {
+    background: url('../svg/grey_file.svg') no-repeat;
+    background-size: 100% 100%;
+    width: 1.6rem;
+    height: 1.6rem;
+    float: right; 
+ }
+ .attachment_icon_2 {
+    background: url('../svg/file.svg') no-repeat;
+    background-size: 100% 100%;
+    width: 1.6rem;
+    height: 1.6rem;
+    float: right; 
+ }
+ .attach_name {
+    color:#808184;
+    font-family: SST Pro Light;
+    font-size: 1.1333rem;
+ }
+ .icon_close {
+    background: url('../svg/close.svg') no-repeat;
+    background-size: 100% 100%;
+    width: 2.0484rem;
+    height: 2.0484rem;
+    float: right; 
+    margin-top: 1.1522rem;
+    margin-right: 0.1333rem;
+ }
+ .span_menu {
+    background: url('../svg/switch_system.svg') no-repeat;
+    height:4rem;
+    background-size: 100% 100%;
+    width: 7rem;
+ }
+ .gesture_plus {
+    background: url('../svg/white_plus.svg') no-repeat;
+    background-size: 100% 100%;
+    width: 3.5848rem;
+    height: 3.5848rem;
+    margin-left: 3.0726rem;
+    margin-top: 3.0726rem;
+ }
+ .reset {
+    color:#FFFFFF;
+    font-family: SST Pro Light;
+    font-size: 1.0882rem;
+ }
+ .menu_toApprove {
+    color:#000000;
+    font-family: SST Pro Light;
+    font-size: 1.6644rem;
+    margin-left:0.3rem;
+ }
+ .gesture_title {
+     margin-top: 1.5rem;
+     padding-top: 5%;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+ }
+ .detailscrolls {
+     overflow: hidden;
+ }
+ .login_button_height {
+     min-height: 3.2007rem;
+ }
+}
