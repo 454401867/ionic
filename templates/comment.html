@@ -1,0 +1,9 @@
+<ion-view view-title="Comment">
+  <ion-header-bar align-title="left">
+    <h1 class="title commenttitle">Comment</h1>
+    <button class="button button-icon icon ion-android-close" ui-sref="detail" nav-transition="back"></button>
+  </ion-header-bar>
+  <ion-content class="padding" id="comment-inform">
+    <textarea id="comment-textarea" focusme ng-trim="true" ng-keydown="doOnKeydown($event)" ng-model="comment.draft"></textarea>
+  </ion-content>
+</ion-view>

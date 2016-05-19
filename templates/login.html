@@ -1,0 +1,45 @@
+<!--ion-view view-title="Login">
+  <ion-content class="padding" ng-controller="LoginController"  scrollbar-x="false" scrollbar-y="false" overflow-scroll="false">
+    <div id="hplus1"></div>
+    <div id="hplus2"></div>
+    <div id="vplus1"></div>
+    <div id="vplus2"></div>
+        <div class="login">
+            <span><strong class="content">ALPHA</strong></span>
+        </div>
+        <div class="list list-inset" style="position:absolute;top:130px;width:100%">
+            <label class="item item-input">
+                <input type="text" placeholder="Gid" ng-model="data.gid">
+            </label>
+            <label class="item item-input">
+                <input type="password" placeholder="Password" ng-model="data.password">
+            </label>
+            <button class="button button-dark button-full" ng-click="login()">Login</button>
+        </div>
+        
+
+    </ion-content>
+</ion-view-->
+
+<ion-view view-title="Login">
+    <ion-content class="login" scrollbar-x="false" scrollbar-y="false" overflow-scroll="false">
+        <div class="white_plus" id="plus"></div>
+
+        <div class="login_content" id="alhpa"></div>
+        
+        <!--<div id="gesturespinner" style="display:none">
+            <ion-spinner icon='circles'></ion-spinner>
+        </div>-->
+        <form name="loginForm" ng-submit="loginForm.$valid && login()" novalidate>
+            <div class="list">
+                <label class="item item-input">
+                    <input id="gid" ng-focus="hidden_plus()" ng-blur="block_plus()" type="text" placeholder="GID" ng-model="data.gid" focusme>
+                </label>
+                <label class="item item-input">
+                    <input id="password" ng-focus="hidden_plus()" ng-blur="block_plus()" type="password" placeholder="Password" ng-model="data.password">
+                </label>
+                <button class="button button-dark button-full login_button login_button_height" style="margin-top:0" type="submit">LOGIN</button>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>

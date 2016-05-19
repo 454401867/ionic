@@ -1,0 +1,21 @@
+<hr>
+<nav ng-show="isLoaded">
+  <div class="row">
+    <div class="col col-25 attachment-pdf-control-box">
+      <button class="button button-clear ion-arrow-left-b icon-left" ng-click="goPrevious()">Prev</button>
+    </div>
+    <div class="col col-50 attachment-pdf-control-box">
+      <label class="attachment-pdf-control-subbox">
+        <input type="text" min=1 ng-model="pageNum" class="attachment-pdf-control-item"/>
+        <span class="attachment-pdf-control-item" > &nbsp; / {{pageCount}}</span>
+      </label>
+    </div>
+    <div class="col col-25 attachment-pdf-control-box">
+      <button class="button button-clear ion-arrow-right-b icon-right" ng-click="goNext()">Next&nbsp;</button>
+    </div>
+  </div>
+</nav>
+<ion-scroll direction="xy" scrollbar-x="false" scrollbar-y="false" overflow-scroll="false"
+  zooming="true" min-zoom="{{zoomMin}}" style="width: 100%; height: 100%">
+  <canvas id="pdf"></canvas>
+</ion-scroll>

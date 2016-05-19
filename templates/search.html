@@ -1,0 +1,28 @@
+<ion-view view-title="Search">
+  <ion-header-bar align-title="left">
+    <h1 class="title searchtitle">Search</h1>
+    <button class="button button-icon icon_close" ng-click="goBack()" nav-transition="none"></button>
+  </ion-header-bar>
+  <ion-content overflow-scroll="true" style="overflow: hidden">
+    <div class="list list-inset">
+      <div class="row item item-input calm-border search_key">
+        <input id="search" type="search" placeholder="Keyword" ng-keydown="keydown($event)"
+          ng-focus="hide()" ng-blur="show()" ng-keyup="clearShowOrHide($event)" nav-transition="none" 
+          ng-model="search.searchValue">
+        <a id="clear" ng-click="clear()">Clear</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col padding item-note prompt" id="pright">
+        <span class="p_one">Searchable Area Includes:</span><br>
+        <span class="p_one">Employee name; GID; Application Number; Description.</span>
+      </div>
+      <div class="col padding item-note prompt" id="pnull">
+        <span class="p_one">Search content can not be empty</span>
+      </div>
+    </div>
+    <div id="tops">
+        <ion-spinner icon='circles'></ion-spinner>
+    </div>
+  </ion-content>
+</ion-view>

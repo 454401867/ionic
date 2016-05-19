@@ -1,0 +1,36 @@
+<ion-side-menus ng-controller="HomeController">
+
+  <ion-pane ion-side-menu-content>
+    <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+  </ion-pane>
+
+  <ion-side-menu side="left" width="275">
+    <ion-header-bar align-title="left">
+        <span class="title span_menu" style="margin-left:1.2rem;"></span>
+  </ion-header-bar>
+    <style>
+     .menucontent .item{
+       border:0;
+     }
+    </style>
+    <ion-content  scrollbar-x="false" scrollbar-y="false" overflow-scroll="true" class="has-header menucontent">
+        
+      <ion-list>
+        <ion-item menu-close ui-sref="app.home" class="menu_toApprove">
+        ToApprove
+        </ion-item>
+        <ion-item ng-repeat="system in systems">
+           <div ng-if="system.systemId != systemId" ng-click="change({{system}})"><i class="demo-icon icon-th-large">&#xe800;</i><span> {{system.systemName}}<span></div>
+        </ion-item>
+      </ion-list>
+      <div class="logout_menu">
+        <p class="menu_userName">{{userName}}</p>
+        <div class="menu_click">
+          <span class="menu_sony">Sony</span><a class="menu_logout" menu-close ui-sref="login"></a>
+        </div>
+      </div>
+    </ion-content>
+        
+  </ion-side-menu>
+  
+</ion-side-menus>

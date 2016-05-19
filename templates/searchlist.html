@@ -1,0 +1,30 @@
+<ion-header-bar align-title="left">
+        <h1 class="title searchtitle">Search</h1>
+        </div>
+       <button class="button button-icon icon_close" ng-click="goBack()" nav-transition="none"></button>
+    </ion-header-bar>
+
+    <ion-header-bar class="bar-subheader" ng-click="showActionsheet()" align-title="left">
+        <div class="subtitle"><span class="subtext">{{searchValue}}</span><span class="subheaderright">{{searchItems.length}}</span></div>
+    </ion-header-bar>
+
+    <ion-content class="content-home" scrollbar-x="false" scrollbar-y="false" overflow-scroll="false">
+        <ion-list>
+            <ul>
+               <ion-item ng-repeat="item in searchItems">
+                    <li ng-click="forward({{item}})">
+                        <p class="main"> {{item.wfAppluser}}<span class="right">{{item.wfAppldate}}</span></p>
+                        <p class="submain">{{item.wfTitle}}</p>
+                        <p class="details">{{item.wfAbstract1}}</p>
+                    </li>
+                </ion-item>
+                <div class="row">
+                    <div class="col padding item-note prompt" id="noSearch">
+                        <span>Your Search - {{searchValue}} - did not match any applications</span>
+                    </div>
+                </div>
+            </ul>
+        </ion-list>
+    </ion-content>
+
+</ion-view>

@@ -1,0 +1,47 @@
+<ion-view view-title="Wise ToApprove">
+    <ion-header-bar align-title="left">
+        <div class="title icon-reorder_square">
+            <!--<i class="demo-icon icon-th-large blue" menu-toggle="left">&#xe800;</i>
+            <span class="blue">WISE<span>&nbsp;&nbsp;<span style="color:#000">ToApprove</span>-->
+            <p class="switchSystem" menu-toggle="left"></p>
+            <p class="totile">ToApprove</p>
+        </div>
+        <button class="button icon_search" ng-click="goSearch()" nav-direction="enter"></button>
+    </ion-header-bar>
+
+    <ion-header-bar class="bar-subheader" ng-click="showActionsheet()" align-title="left">
+        <div class="subtitle"><span class="text">{{wfTypeName}}<span>
+            <span class="subheaderright">{{count}}</span></div>
+    </ion-header-bar>
+
+    <style>
+        .platform-android .action-sheet .button.activated {
+            background: #439EDF;
+            color: #fff;
+        }
+    </style>
+    <ion-content class="content-home" scrollbar-x="false" scrollbar-y="false" overflow-scroll="false">
+        <div id="hometop">
+            <ion-spinner icon='circles'></ion-spinner>
+        </div>
+        <div id="homeCotent">
+            <!--cotent start-->
+            <ion-refresher on-refresh="doRefresh()" spinner="ios" pulling-text="" pulling-icon="" refreshing-text=""> </ion-refresher>
+            <ion-list>
+                <ul>
+                    <ion-item ng-repeat="item in items" class="item-remove-animate">
+                        <li ng-click="forward({{item}})">
+                            <p class="main"> {{item.wfAppluser}}<span class="right">{{item.wfAppldate}}</span></p>
+                            <p class="submain">{{item.wfTitle}}</p>
+                            <p class="details">{{item.wfAbstract1}}</p>
+                        </li>
+                    </ion-item>
+                </ul>
+            </ion-list>
+            <!--上拉更多 ng-if="moreDataCanBeLoaded()"-->
+            <ion-infinite-scroll immediate-check="false" spinner="ios" ng-if="hasMore" on-infinite="loadMore()" distance="1%"></ion-infinite-scroll>
+            <!--cotent end-->
+        </div>
+    </ion-content>
+
+</ion-view>

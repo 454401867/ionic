@@ -1,0 +1,270 @@
+<ion-view view-title="Detail" ng-model="item">
+    <ion-header-bar align-title="left">
+        <h1 class="title detailtitle">Details</h1>
+        <button class="button button-icon icon_close" ng-click="goBack()" nav-transition="forward"></button>
+    </ion-header-bar>
+    <ion-header-bar class="bar-subheader">
+        <div class="button-bar">
+            <a class="button button_reject" ng-click="reject()">REJECT</a>
+            <a class="button button_approve" ng-click="accept()">APPROVE</a>
+        </div>
+    </ion-header-bar>
+    <ion-content class="has-subheader padding content-detail detailscrolls" overflow-scroll="true" id="detailscroll">
+        <div id="top">
+            <ion-spinner icon='circles'></ion-spinner>
+        </div>
+        <div id="centent">
+            <p><span class="right">{{tmpDetail.wfAppldate}}</span></p>
+            <p class="main">{{tmpDetail.wfAppluser}}</p>
+            <p class="submain">{{tmpDetail.wfIncidentId}}</p>
+            <p class="details">{{tmpDetail.wfAbstract1}}</p>
+            <hr />
+            <p class="h_info">Applicant Info</p>
+            <ion-list class="item-records">
+                <ion-item class="i_info">
+                    <P class="p_info">Applicant(ID) : <i>{{item.applicantaccount}}</i></P>
+                    <P class="p_info">Applicant(Name) : <i>{{item.applicantname}}</i></P>
+                    <P class="p_info">Organization : <i>{{item.departmentname}}</i></P>
+                    <P class="p_info">Submit Date : <i>{{item.requestdate}}</i></P>
+                </ion-item>
+                <hr />
+            </ion-list>
+            <div ng-if="wfTypeId == 5 || wfTypeId == 6">
+                <p class="h_info">Basic Information</p>
+                <ion-list class="item-records">
+                    <ion-item class="i_info">
+                        <p class="p_info">Pre-application : <i>{{item.urlDisplayText}}</i></p>
+                        <p class="p_info">Apply Type : <i>{{item.applytypetext}}</i></p>
+                        <p class="p_info" ng-if="item.applytype == 3">Third Party Name : <i>{{item.thirdpartyname}}</i></p>
+                        <p class="p_info">Cost Cneter : <i>{{item.costcentername}}</i></p>
+                        <p class="p_info">Company : <i>{{item.companyname}}</i></p>
+                        <p class="p_info">Departure : <i>{{item.departure}}</i></p>
+                        <p class="p_info">Destination : <i>{{item.destination}}</i></p>
+                        <p class="p_info">Start Date : <i>{{item.starttime}}</i></p>
+                        <p class="p_info">Return Date : <i>{{item.returntime}}</i></p>
+                        <p ng-if="wfTypeId == 6" class="p_info">Internal Order : <i>{{item.internalmanagementno}}</i></p>
+                        <p ng-if="wfTypeId == 5" class="p_info">Advance Payment : <i>{{item.paymentamount}}</i></p>
+                        <p ng-if="wfTypeId == 5" class="p_info">Air Ticket Application ID : <i>{{item.airticketappid}}</i></p>
+                        <p class="p_info">Description : <i>{{item.description}}</i></p>
+                        <p ng-if="wfTypeId == 6" class="p_info">Overdue : <i>{{item.isextendedtext}}</i></p>
+                        <p ng-if="wfTypeId == 6 && item.isextended == 0" class="p_info">Overdue Reason : <i>{{item.extendedreason}}</i></p>
+                        <p ng-if="wfTypeId == 6 && item.isextended == 0" class="p_info">Improvement Plan : <i>{{item.improvementplan}}</i></p>
+                        <p ng-if="wfTypeId == 6 && item.hasvourcher == 0" class="p_info">No Invoice Type : <i>{{item.invoicetypetext}}</i></p>
+                        <p ng-if="wfTypeId == 6 && item.hasvourcher == 0" class="p_info">Reason : <i>{{item.reason}}</i></p>
+                        <p ng-if="wfTypeId == 6 && item.invoicetype == 1" class="p_info">Name : <i>{{item.lostname}}</i></p>
+                        <p ng-if="wfTypeId == 6 && item.invoicetype == 1" class="p_info">Invoice Lost Date : <i>{{item.losttime}}</i></p>
+                        <p ng-if="wfTypeId == 6 && item.invoicetype == 1" class="p_info">Invoice Lost Location : <i>{{item.lostplace}}</i></p>
+                        <p ng-if="wfTypeId == 6 && item.invoicetype == 1" class="p_info">Invoice Lost Reason : <i>{{item.reason}}</i></p>
+                    </ion-item>
+                </ion-list>
+                <hr />
+            </div>
+            <div ng-if="wfTypeId == 22">
+                <p class="h_info">Basic Infomation</p>
+                <ion-list class="item-records">
+                    <ion-item class="i_info">
+                        <p class="p_info">Branch Chop : <i>{{item.choptypeid}}</i></p>
+                        <p class="p_info">Number of Stamps : <i>{{item.chopno}}</i></p>
+                        <p class="p_info">Whether to need the legal chop/ head chop : <i>{{item.namechop}}</i></p>
+                        <p class="p_info">EDMA No : <i>{{item.dm_applicationid}}</i></p>
+                        <p class="p_info">Related ChopID : <i>{{item.relatedchopid}}</i></p>
+                        <p ng-if="item.iscontract == 1" class="p_info">Stampduty Contract : <i>{{item.isstampduty}}</i></p>
+                        <p ng-if="item.iscontract == 1" class="p_info">Need Legal Div.confirm contracts : <i>{{item.needlegal}}</i></p>
+                        <p ng-if="item.iscontract == 1" class="p_info">Contract Type : <i>{{item.contracttype}}</i></p>
+                        <p ng-if="item.iscontract == 1" class="p_info">Contracting Party : <i>{{item.contractingparty}}</i></p>
+                        <p ng-if="item.iscontract == 1" class="p_info">Sony Group Company : <i>{{item.sonygroupcompanyflag}}</i></p>
+                        <p ng-if="item.iscontract == 1" class="p_info">Contract Start Date : <i>{{item.contractstartdate}} - {{item.contractenddate}}</i></p>
+                        <p ng-if="item.iscontract == 1" class="p_info">Submit Type : <i>{{item.submittypetext}}</i></p>
+                        <p ng-if="item.submittype == 2" class="p_info">Original Contract Amount : <i>{{item.originalchopamount}}</i></p>
+                        <p ng-if="item.iscontract == 1" class="p_info">Contract Amount : <i>{{item.contractamount}}</i></p>
+                        <p ng-if="item.iscontract == 1" class="p_info">Contract Amount(Not CNY) : <i>{{item.contractamountf}}/{{item.currency}}</i></p>
+                        <p ng-if="item.iscontract == 1" class="p_info">Stamp Tax : <i>{{item.samptax}}</i></p>
+                        <p ng-if="item.iscontract == 1" class="p_info">Stamp Tax Amount : <i>{{item.stamptaxamount}}</i></p>
+                        <p ng-if="item.isstampduty == 'No'" class="p_info">Non stamp tax Reason : <i>{{item.nonstamptaxreason}}</i></p>
+                        <p ng-if="item.iscontract == 1" class="p_info">Chop Description : <i>{{item.chopdesc}}</i></p>
+                    </ion-item>
+                </ion-list>
+                <hr />
+            </div>
+            <div ng-if="wfTypeId == 23">
+                <p class="h_info">EDMA Type</p>
+                <ion-list class="item-records">
+                    <ion-item class="i_info">
+                        <p class="p_info">Activity type : <i>{{item.dmtype}}</i></p>
+                        <p class="p_info">Decision Item : <i>{{item.mainitemid}} - {{item.mainitemname}}</i></p>
+                        <p class="p_info">Parent DM Number : <i>{{item.parentappid}}</i></p>
+                    </ion-item>
+                    <hr />
+                </ion-list>
+                <p class="h_info">EDMA Content</p>
+                <ion-list class="item-records">
+                    <ion-item class="i_info">
+                        <p class="p_info">Title : <i>{{item.title}}</i></p>
+                        <p class="p_info">Content : <i>{{item.content}}</i></p>
+                        <p class="p_info">Reason : <i>{{item.reason}}</i></p>
+                        <p class="p_info">Duration of the event : <i>{{item.startdate}} ~ {{item.enddate}}</i></p>
+                        <p ng-if="item.delayedreason!=''" class="p_info">Extension Application Reason : <i>{{item.delayedreason}}</i></p>
+                    </ion-item>
+                    <hr />
+                </ion-list>
+                <p class="h_info">Detail - Expense\Others</p>
+                <ion-list class="item-records">
+                    <ion-item ng-repeat="dmDetail in item.dmDetailList" class="i_info">
+                        <p class="p_info">EDMA Item : <i>{{dmDetail.itemid_1}} - {{dmDetail.itemname_1}}</i></p>
+                        <p class="p_info">Cost Center : <i>{{dmDetail.costcenterid_1}} - {{dmDetail.costcenternamee_1}}</i></p>
+                        <p class="p_info">This fiscal year(CNY) : <i>{{dmDetail.famount_1}}</i></p>
+                        <p class="p_info">Next fiscal year(CNY) : <i>{{dmDetail.nfamount_1}}</i></p>
+                        <p class="p_info">Other fiscal year(CNY) : <i>{{dmDetail.ofamount_1}}</i></p>
+                        <p class="p_info">Total amount(CNY) : <i>{{dmDetail.itemamount_1}}</i></p>
+                    </ion-item>
+                    <ion-item ng-if="item.dmDetailList == ''" class="i_info">
+                        <p class="p_info">EDMA Item : <i></i></p>
+                        <p class="p_info">Cost Center : <i></i></p>
+                        <p class="p_info">This fiscal year(CNY) : <i></i></p>
+                        <p class="p_info">Next fiscal year(CNY) : <i></i></p>
+                        <p class="p_info">Other fiscal year(CNY) : <i></i></p>
+                        <p class="p_info">Total amount(CNY) : <i></i></p>
+                    </ion-item>
+                    <hr />
+                </ion-list>
+                <p class="h_info">Detail - Investment</p>
+                <ion-list class="item-records">
+                    <ion-item ng-repeat="dmDetail2 in item.dmDetail2List" class="i_info">
+                        <p class="p_info">EDMA Item : <i>{{dmDetail2.itemid_2}} - {{dmDetail2.itemname_2}}</i></p>
+                        <p class="p_info">Cost Center : <i>{{dmDetail2.costcenterid_2}} - {{dmDetail2.costcenternamee_2}}</i></p>
+                        <p class="p_info">This fiscal year(CNY) : <i>{{dmDetail2.famount_2}}</i></p>
+                        <p class="p_info">Next fiscal year(CNY) : <i>{{dmDetail2.nfamount_2}}</i></p>
+                        <p class="p_info">Other fiscal year(CNY) : <i>{{dmDetail2.ofamount_2}}</i></p>
+                        <p class="p_info">Total amount(CNY) : <i>{{dmDetail2.itemamount_2}}</i></p>
+                    </ion-item>
+                    <ion-item ng-if="item.dmDetail2List == ''" class="i_info">
+                        <p class="p_info">EDMA Item : <i></i></p>
+                        <p class="p_info">Cost Center : <i></i></p>
+                        <p class="p_info">This fiscal year(CNY) : <i></i></p>
+                        <p class="p_info">Next fiscal year(CNY) : <i></i></p>
+                        <p class="p_info">Other fiscal year(CNY) : <i></i></p>
+                        <p class="p_info">Total amount(CNY) : <i></i></p>
+                    </ion-item>
+                    <hr />    
+                </ion-list>
+            </div>
+            <div ng-if="wfTypeId == 5 || wfTypeId == 6">
+                <p class="h_info">Expense Detail</p>
+                <ion-list class="item-records">
+                    <ion-item ng-if="wfTypeId == 5" ng-repeat="detail in item.bizTripPreDetailList" class="i_info">
+                        <p class="p_info">Exp.Activity Date : <i>{{detail.invoicedate}}</i></p>
+                        <p class="p_info">Expense Type : <i>{{detail.accountcodename}}</i></p>
+                        <p class="p_info">Applied Amount : <i>{{detail.appliedamount}}/{{detail.originalcurrency}}</i></p>
+                        <p class="p_info">Exchange Rate : <i>{{detail.exchanggerate}}</i></p>
+                        <p class="p_info">Applied Amount : <i>{{detail.appliedamount}}</i></p>
+                        <p class="p_info">Detail Description : <i>{{detail.detaildescription}}</i></p>
+                    </ion-item>
+                    <ion-item ng-if="item.bizTripPreDetailList == '' && wfTypeId == 5" class="i_info">
+                        <p class="p_info">Exp.Activity Date : </p>
+                        <p class="p_info">Expense Type : </p>
+                        <p class="p_info">Applied Amount : </p>
+                        <p class="p_info">Exchange Rate : </p>
+                        <p class="p_info">Applied Amount : </p>
+                        <p class="p_info">Detail Description : </p>
+                    </ion-item>
+                    <ion-item ng-if="wfTypeId == 6" ng-repeat="detail in item.bizTripDetailList" class="i_info">
+                        <p class="p_info">Exp.Activity Date : <i>{{detail.invoicedate}}</i></p>
+                        <p class="p_info">Expense Type : <i>{{detail.accountcodename}}</i></p>
+                        <p class="p_info">Applied Amount : <i>{{detail.appliedamount}}</i></p>
+                        <p class="p_info">Detail Description : <i>{{detail.detaildescription}}</i></p>
+                    </ion-item>
+                    <ion-item ng-if="item.bizTripDetailList == '' && wfTypeId == 6" class="i_info">
+                        <p class="p_info">Exp.Activity Date : </p>
+                        <p class="p_info">Expense Type : </p>
+                        <p class="p_info">Applied Amount : </p>
+                        <p class="p_info">Detail Description : </p>
+                    </ion-item>
+                    <hr />
+                </ion-list>
+            </div>
+            <div ng-if="wfTypeId == 5 || wfTypeId == 6">
+                <p class="h_info">Allowance Detail</p>
+                <ion-list class="item-records">
+                    <ion-item ng-if="wfTypeId == 5" ng-repeat="detail2 in item.bizTripPreDetail2List" class="i_info">
+                        <p class="p_info">Biz Trip Region : <i>{{detail2.biztriparea}}</i></p>
+                        <p class="p_info">Start Date : <i>{{detail2.starttime}}</i></p>
+                        <p class="p_info">End Date : <i>{{detail2.endtime}}</i></p>
+                        <p class="p_info">Days : <i>{{detail2.days}}</i></p>
+                        <p class="p_info">Allowance/Currency : <i>{{detail2.allowance}}</i>/<i>{{detail2.currency}}</i></p>
+                        <p class="p_info">Exchange Rate : <i>{{detail2.exchanggerate}}</i></p>
+                        <p class="p_info">Applied Amount : <i>{{detail2.appliedamount}}</i></p>
+                        <p class="p_info">Detail Description : <i>{{detail2.detaildescription}}</i></p>
+                    </ion-item>
+                    <ion-item ng-if="item.bizTripPreDetail2List == '' && wfTypeId == 5" class="i_info">
+                        <p class="p_info">Biz Trip Region : </p>
+                        <p class="p_info">Start Date : </p>
+                        <p class="p_info">End Date : </p>
+                        <p class="p_info">Days : </p>
+                        <p class="p_info">Allowance/Currency : CNY</p>
+                        <p class="p_info">Exchange Rate : </p>
+                        <p class="p_info">Applied Amount : </p>
+                        <p class="p_info">Detail Description : </p>
+                    </ion-item>
+                    <ion-item ng-if="wfTypeId == 6" ng-repeat="detail2 in item.bizTripDetail2List" class="i_info">
+                        <p class="p_info">Biz Trip Region : <i>{{detail2.biztriparea}}</i></p>
+                        <p class="p_info">Start Date : <i>{{detail2.starttime}}</i></p>
+                        <p class="p_info">End Date : <i>{{detail2.endtime}}</i></p>
+                        <p class="p_info">Applied Amount : <i>{{detail2.appliedamount}}</i></p>
+                        <p class="p_info">Detail Description : <i>{{detail2.detaildescription}}</i></p>
+                    </ion-item>
+                    <ion-item ng-if="item.bizTripDetail2List == '' && wfTypeId == 6" class="i_info">
+                        <p class="p_info">Biz Trip Region : </p>
+                        <p class="p_info">Start Date : </p>
+                        <p class="p_info">End Date : </p>
+                        <p class="p_info">Applied Amount : </p>
+                        <p class="p_info">Detail Description : </p>
+                    </ion-item>
+                </ion-list>
+                <hr />
+            </div>
+            <div ng-if="wfTypeId == 5 || wfTypeId == 6">
+                <p class="h_info">Total Amount</p>
+                <ion-list class="item-records">
+                    <ion-item class="i_info">
+                        <p class="p_info">Allowance Revise Amount : <i>{{item.allowancereviseamount}}</i></p>
+                        <p class="p_info">Applied Amount : <i>{{item.appliedamount}}</i></p>
+                        <p class="p_info">Allowance Revise Reason : <i>{{item.allowancerevisereason}}</i></p>
+                    </ion-item>
+                    <hr />
+                </ion-list>
+            </div>
+            <ion-list class="item-attachments">
+                <ion-item ng-repeat="attachment in item.wfAttachmentDetailList" ng-click="openDocument(attachment)">
+                    <div class="attach_file" ng-if="attachment.fileType != 'pdf' && attachment.fileType != 'txt' && attachment.fileType != 'pic'">
+                        <p style="color:#808184;" class="attach_name">{{attachment.fileName}}</p> <p class="attachment_icon_1"></p>
+                    </div>
+                    <div class="attach_file" ng-if="attachment.fileType == 'pdf' || attachment.fileType == 'txt' || attachment.fileType == 'pic'">
+                        <p style="color:#439EDF;" class="attach_name">{{attachment.fileName}}</p> <p class="attachment_icon_2"></p>
+                    </div>
+                    
+                </ion-item>
+                <div ng-if="item.wfAttachmentDetailList!=''" class="attachment_hr">
+                    <hr />
+                </div>
+            </ion-list>
+            
+            <p class="h_info">Approve Records</p>
+            <ion-list class="item-records">
+                <ion-item ng-repeat="approverDetailList in item.approverDetailList" class=" i_info ">
+                    <P class="p_info">Approver : <i>{{approverDetailList.approver}}</i></P>
+                    <P class="p_info">ApproverID : <i>{{approverDetailList.approveraccount}}</i></P>
+                    <p class="p_info">Status : <i>{{approverDetailList.status}}</i></p>
+                    <p class="p_info">Date : <i>{{approverDetailList.date}}</i></p>
+                    <p class="p_info">Comment : <i>{{approverDetailList.comments}}</i></p>
+                </ion-item>
+            </ion-list>
+            <div class="comment" ng-click="editComment()" nav-direction="forward">
+                <div class="comment-normal" ng-show="comment.content=='' && comment.isValid">
+                    Comment
+                </div>
+                <div class="comment-normal" ng-trim="true" ng-show="comment.content!='' && comment.isValid" ng-model="comment.content">{{comment.content}}</div>
+                <div class="comment-required" ng-show="comment.content=='' && !comment.isValid">Comment is mandatory when REJECT</div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
