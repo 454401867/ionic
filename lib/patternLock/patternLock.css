@@ -1,0 +1,54 @@
+/*
+    patternLock.js v 0.4.0
+    Author: Sudhanshu Yadav
+    Copyright (c) 2013 Sudhanshu Yadav - ignitersworld.com , released under the MIT license.
+    Demo and documentaion on: ignitersworld.com/lab/patternLock.html
+*/
+
+.patt-holder{background:#439EDF;  -ms-touch-action: none;}
+.patt-wrap{position:relative; cursor:pointer;}
+.patt-wrap ul, .patt-wrap li{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+.patt-circ{
+    position:relative;
+    float: left;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+ }
+.patt-circ.hovered{
+    border:0.1875rem solid #4a87ee;
+}
+
+.patt-error .patt-circ.hovered{
+    border:0.1875rem solid #cc2311;
+}
+
+.patt-hidden .patt-circ.hovered{border:0;}
+
+.patt-dots{
+    width: 50px;height: 50px;
+    border-radius:25px;
+    border:2px solid #fafafa;
+    background-color: #fafafa;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-25px;
+    margin-left:-25px;
+}
+.patt-lines{
+    border-radius:5px;
+    height:10px;
+    background:#000000;
+    position:absolute;
+    transform-origin:5px 5px;
+    -ms-transform-origin:5px 5px; /* IE 9 */
+    -webkit-transform-origin:5px 5px;
+}
+
+.patt-hidden .patt-lines{
+    display:none;
+}
